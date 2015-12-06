@@ -1,7 +1,7 @@
 Package.describe({
   name: 'peerlibrary:flow-router',
   summary: 'Carefully Designed Client Side Router for Meteor',
-  version: '2.10.0',
+  version: '2.10.0_1',
   git: 'https://github.com/peerlibrary/flow-router.git'
 });
 
