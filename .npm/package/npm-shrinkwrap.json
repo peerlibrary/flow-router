@@ -1,10 +1,10 @@
 {
   "dependencies": {
     "page": {
-      "version": "https://github.com/peerlibrary/page.js/archive/b90fb4b32f55aba71bb374c946130d3ed82a9d1f.tar.gz",
+      "version": "https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz",
       "dependencies": {
         "path-to-regexp": {
-          "version": "1.0.3",
+          "version": "1.2.1",
           "dependencies": {
             "isarray": {
               "version": "0.0.1"
@@ -14,7 +14,7 @@
       }
     },
     "qs": {
-      "version": "3.1.0"
+      "version": "5.2.0"
     }
   }
 }

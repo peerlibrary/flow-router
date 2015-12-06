@@ -1,7 +1,7 @@
 Package.describe({
   name: 'kadira:flow-router',
   summary: 'Carefully Designed Client Side Router for Meteor',
-  version: '2.8.0',
+  version: '2.10.0',
   git: 'https://github.com/kadirahq/flow-router.git'
 });
 
@@ -9,8 +9,8 @@ Npm.depends({
   // In order to support IE9, we had to fork pagejs and apply
   // this PR: https://github.com/visionmedia/page.js/pull/288
   // And this PR: https://github.com/visionmedia/page.js/pull/331
-  'page':'https://github.com/peerlibrary/page.js/archive/b90fb4b32f55aba71bb374c946130d3ed82a9d1f.tar.gz',
-  'qs':'3.1.0'
+  'page':'https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz',
+  'qs':'5.2.0'
 });
 
 Package.onUse(function(api) {
@@ -47,6 +47,7 @@ Package.onTest(function(api) {
   api.addFiles('test/server/plugins/fast_render.js', 'server');
 
   api.addFiles('test/common/router.path.spec.js', ['client', 'server']);
+  api.addFiles('test/common/router.url.spec.js', ['client', 'server']);
   api.addFiles('test/common/router.addons.spec.js', ['client', 'server']);
   api.addFiles('test/common/route.spec.js', ['client', 'server']);
   api.addFiles('test/common/group.spec.js', ['client', 'server']);
@@ -62,7 +63,7 @@ function configure(api) {
   api.use('ejson');
 
   api.use('meteorhacks:fast-render@2.10.0', ['client', 'server'], {weak: true});
-  api.use('cosmos:browserify@0.5.0', 'client');
+  api.use('cosmos:browserify@0.9.2', 'client');
 
   api.addFiles('client.browserify.js', 'client');
   api.addFiles('client/triggers.js', 'client');
@@ -77,4 +78,6 @@ function configure(api) {
   api.addFiles('server/_init.js', 'server');
 
   api.addFiles('server/plugins/fast_render.js', 'server');
+
+  api.addFiles('lib/router.js', ['client', 'server']);
 }
