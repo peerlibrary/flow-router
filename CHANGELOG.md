@@ -56,7 +56,7 @@
 ### v2.0.0 
 
 * Released 2.0  :)
-* Now flow-router comes as `kadira:flow-router`
+* Now flow-router comes as `peerlibrary:flow-router`
 * Remove deprecated APIs
     - `FlowRouter.reactiveCurrent()`
     - Middlewares

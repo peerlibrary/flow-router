@@ -37,7 +37,7 @@ It exposes a great API for changing the URL and reactively getting data from the
 Add FlowRouter to your app:
 
 ~~~shell
-meteor add kadira:flow-router
+meteor add peerlibrary:flow-router
 ~~~
 
 Let's write our first route (add this file to `lib/router.js`):
@@ -777,9 +777,9 @@ Migrating into version 2.0 is easy and you don't need to change any application 
 Here are the steps to migrate your app into 2.0.
 
 #### Use the New FlowRouter Package
-* Now FlowRouter comes as `kadira:flow-router`
+* Now FlowRouter comes as `peerlibrary:flow-router`
 * So, remove `meteorhacks:flow-router` with : `meteor remove meteorhacks:flow-router`
-* Then, add `kadira:flow-router` with `meteor add kadira:flow-router`
+* Then, add `peerlibrary:flow-router` with `meteor add peerlibrary:flow-router`
 
 #### Change FlowLayout into BlazeLayout
 * We've also renamed FlowLayout as [BlazeLayout](https://github.com/kadirahq/blaze-layout).
