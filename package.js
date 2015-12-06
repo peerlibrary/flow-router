@@ -16,6 +16,7 @@ Npm.depends({
 Package.onUse(function(api) {
   configure(api);
   api.export('FlowRouter');
+  api.imply('kadira:flow-router@2.10.0');
 });
 
 Package.onTest(function(api) {
