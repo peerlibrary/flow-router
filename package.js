@@ -1,7 +1,7 @@
 Package.describe({
   name: 'peerlibrary:flow-router',
   summary: 'Carefully Designed Client Side Router for Meteor',
-  version: '2.10.0_1',
+  version: '2.10.0_2',
   git: 'https://github.com/peerlibrary/flow-router.git'
 });
 
@@ -16,7 +16,6 @@ Npm.depends({
 Package.onUse(function(api) {
   configure(api);
   api.export('FlowRouter');
-  api.imply('kadira:flow-router@2.10.0');
 });
 
 Package.onTest(function(api) {
