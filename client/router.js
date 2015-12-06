@@ -214,7 +214,8 @@ Router.prototype._getPath = function(event) {
   if (event.defaultPrevented) return;
 
   // ensure link
-  var el = event.target;
+  // use shadow dom when available
+  var el = event.path ? event.path[0] : event.target;
   while (el && 'A' !== el.nodeName) el = el.parentNode;
   if (!el || 'A' !== el.nodeName) return;
 
