@@ -9,6 +9,9 @@ It exposes a great API for changing the URL and reactively getting data from the
 
 > We've released 2.0 and follow this [migration guide](#migrating-into-20) if you are already using FlowRouter.
 
+**This is a fork of [Flow Router](https://github.com/meteorhacks/flow-router) which adds [#ignoring-links](Ignoring Links) feature
+to it. [Pull request](https://github.com/kadirahq/flow-router/pull/389) was not accepted.**
+
 ## TOC
 
 * [Meteor Routing Guide](#meteor-routing-guide)
@@ -18,6 +21,7 @@ It exposes a great API for changing the URL and reactively getting data from the
 * [Rendering and Layout Management](#rendering-and-layout-management)
 * [Triggers](#triggers)
 * [Not Found Routes](#not-found-routes)
+* [Ignoring Links](#ignoring-links)
 * [API](#api)
 * [Subscription Management](#subscription-management)
 * [IE9 Support](#ie9-support)
