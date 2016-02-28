@@ -14,6 +14,7 @@ It exposes a great API for changing the URL and reactively getting data from the
 * [Meteor Routing Guide](#meteor-routing-guide)
 * [Getting Started](#getting-started)
 * [Routes Definition](#routes-definition)
+* [Group Routes](#group-routes)
 * [Rendering and Layout Management](#rendering-and-layout-management)
 * [Triggers](#triggers)
 * [Not Found Routes](#not-found-routes)
@@ -588,7 +589,7 @@ After you've registered your subscriptions, you can reactively check for the sta
 ~~~js
 Tracker.autorun(function() {
     console.log("Is myPost ready?:", FlowRouter.subsReady("myPost"));
-    console.log("Does all subscriptions ready?:", FlowRouter.subsReady());
+    console.log("Are all subscriptions ready?:", FlowRouter.subsReady());
 });
 ~~~
 
@@ -599,13 +600,13 @@ So, you can use `FlowRouter.subsReady` inside template helpers to show the loadi
 Sometimes, we need to use `FlowRouter.subsReady()` in places where an autorun is not available. One such example is inside an event handler. For such places, we can use the callback API of `FlowRouter.subsReady()`.
 
 ~~~js
-Template.myTemplate.events(
+Template.myTemplate.events({
    "click #id": function(){
       FlowRouter.subsReady("myPost", function() {
          // do something
       });
   }
-);
+});
 ~~~
 
 > Arunoda has discussed more about Subscription Management in FlowRouter in [this](https://meteorhacks.com/flow-router-and-subscription-management.html#subscription-management) blog post about [FlowRouter and Subscription Management](https://meteorhacks.com/flow-router-and-subscription-management.html).
