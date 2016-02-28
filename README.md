@@ -9,7 +9,7 @@ It exposes a great API for changing the URL and reactively getting data from the
 
 > We've released 2.0 and follow this [migration guide](#migrating-into-20) if you are already using FlowRouter.
 
-**This is a fork of [Flow Router](https://github.com/meteorhacks/flow-router) which adds [#ignoring-links](Ignoring Links) feature
+**This is a fork of [Flow Router](https://github.com/meteorhacks/flow-router) which adds [Ignoring Links](#ignoring-links) feature
 to it. [Pull request](https://github.com/kadirahq/flow-router/pull/389) was not accepted.**
 
 ## TOC
