@@ -1,7 +1,7 @@
 Package.describe({
   name: 'peerlibrary:flow-router',
   summary: 'Carefully Designed Client Side Router for Meteor',
-  version: '2.10.1_1',
+  version: '2.12.1_1',
   git: 'https://github.com/peerlibrary/flow-router.git'
 });
 
@@ -11,7 +11,7 @@ Npm.depends({
   // And this PR: https://github.com/visionmedia/page.js/pull/331
   'page':'https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz',
   'qs':'5.2.0'
-});
+ });
 
 Package.onUse(function(api) {
   configure(api);
@@ -25,7 +25,6 @@ Package.onTest(function(api) {
   api.use('mongo');
   api.use('http');
   api.use('random');
-  api.use('practicalmeteor:sinon');
   api.use('meteorhacks:fast-render');
   api.use('meteorhacks:inject-data');
   api.use('tmeasday:html5-history-api');
@@ -54,18 +53,18 @@ Package.onTest(function(api) {
 });
 
 function configure(api) {
-  api.versionsFrom('1.0');
+  api.versionsFrom('METEOR@1.3-rc.1');
 
   api.use('underscore');
   api.use('tracker');
   api.use('reactive-dict');
   api.use('reactive-var');
   api.use('ejson');
+  api.use('modules');
 
-  api.use('meteorhacks:fast-render@2.10.0', ['client', 'server'], {weak: true});
-  api.use('cosmos:browserify@0.9.2', 'client');
+  api.use('meteorhacks:fast-render@2.14.0', ['client', 'server'], {weak: true});
 
-  api.addFiles('client.browserify.js', 'client');
+  api.addFiles('client/modules.js', 'client');
   api.addFiles('client/triggers.js', 'client');
   api.addFiles('client/router.js', 'client');
   api.addFiles('client/group.js', 'client');

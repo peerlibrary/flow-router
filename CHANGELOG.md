@@ -1,5 +1,18 @@
 # Changelog
 
+### v2.12.1
+
+* Add NPM modules back. Fixes: [#602](https://github.com/kadirahq/flow-router/issues/602)
+
+### v2.12.0
+
+* Update Fast Render to v2.14.0
+
+### v2.11.0
+
+* Add support for Meteor 1.3 RC-1.
+* Removes browserify and get modules from Meteor 1.3.
+
 ### v2.10.1
 * Fix the url generation for prefixed paths. See: [#508](https://github.com/kadirahq/flow-router/issues/508)
 

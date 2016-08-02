@@ -1,20 +1,28 @@
 {
   "dependencies": {
     "page": {
-      "version": "https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz",
+      "version": "1.6.4",
+      "resolved": "https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz",
+      "from": "https://github.com/peerlibrary/page.js/archive/648031f0e9d9398e0e9e3c7e4a79213e2706194f.tar.gz",
       "dependencies": {
         "path-to-regexp": {
           "version": "1.2.1",
+          "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.2.1.tgz",
+          "from": "path-to-regexp@>=1.2.1 <1.3.0",
           "dependencies": {
             "isarray": {
-              "version": "0.0.1"
+              "version": "0.0.1",
+              "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz",
+              "from": "isarray@0.0.1"
             }
           }
         }
       }
     },
     "qs": {
-      "version": "5.2.0"
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/qs/-/qs-5.2.0.tgz",
+      "from": "qs@5.2.0"
     }
   }
 }
